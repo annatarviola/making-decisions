@@ -6,7 +6,7 @@
   If it is not, console log "Coding has its challenges."
 */
 
-//CODE HERE
+
 let lovesCode = true;
 if (lovesCode) {
   console.log("I love to code!")
@@ -27,7 +27,7 @@ var brittanisBirthYear = 1986;
   and then console.log '{name} is older'. Hint: Consider what will happen if they are the same age. Handle this situation.
 */
 
-//CODE HERE
+
 if (amysAge > brittanisAge) {
   console.log('Amy is older than Brittani.')
 } else if (brittanisAge > amysAge) {
@@ -43,7 +43,11 @@ if (amysAge > brittanisAge) {
   If they were, console.log 'Amy & Brittani were born in the same year'. If they were not, console.log 'Amy & Brittani were not born in the same year'
 */
 
-//CODE HERE
+if (amysBirthYear === brittanisBirthYear) {
+  console.log('Amy & Brittani were born in the same year')
+} else {
+  console.log('Amy & Brittani were not born in the same year')
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -51,11 +55,27 @@ let temperature = 55;
 let rain = true;
 
 /*
-  Using an if statement and a comparison operator, create code that will log a suggestion on what type of clothes one should wear for the day, based on the above temperature and rain.
-  If it is 80 degrees or above, and raining, one should wear a t-shirt and take an umbrella. If it is between 60 and 80 degrees, and raining, one should wear a rain-jacket. If it is 60 degrees or below, one should wear a jacket and carry an umbrella. Come up with your own clothing suggestions based on those temperature parameters when it is not raining.
+  Using an if statement and a comparison operator, create code that will log a suggestion on what type of clothes one should wear for the day, 
+  based on the above temperature and rain.
+  If it is 80 degrees or above, and raining, one should wear a t-shirt and take an umbrella. 
+  If it is between 60 and 80 degrees, and raining, one should wear a rain-jacket. 
+  If it is 60 degrees or below, one should wear a jacket and carry an umbrella. 
+  Come up with your own clothing suggestions based on those temperature parameters when it is not raining.
 */
 
-//CODE HERE
+if (temperature >= 80 && rain) {
+  console.log('Wear a t-shirt and grab an umbrella my good man')
+} else if (temperature > 60 && rain) {
+  console.log('Better throw on a rain-jacket there pal')
+} else if (temperature <= 60 && rain) {
+  console.log(`Throw on a jacket and grab an umbrella 'cause we're gettin' soggy today, boys`)
+} else if (temperature >= 80 && !rain) {
+  console.log('Break out the spaghetti straps and shorts for hot girl summer')
+} else if (temperature > 60 && !rain) {
+  console.log('Perfect weather for a tee and jeans')
+} else if (temperature <= 60 && !rain) {
+  console.log(`Make sure to grab a jacket and wear pants today, unless you're Tyler from PE class because I know you'll wear your basketball shorts no matter what I say`)
+}
 
 ////////// PROBLEM 5 //////////
 
