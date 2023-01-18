@@ -115,10 +115,14 @@ let score = 0;
 let passingScore = 7;
 
 /*
-  Create a while-loop that logs "Your score is not high enough" while the score variable above is below passingScore. In each iteration of the loop, increase the score by one. If your code is successful, you will see your logged statement 7 times.
+  Create a while-loop that logs "Your score is not high enough" while the score variable above is below passingScore. 
+  In each iteration of the loop, increase the score by one. If your code is successful, you will see your logged statement 7 times.
 */
 
-//CODE HERE
+while (score < passingScore) {
+  console.log("Your score is not high enough")
+  score++
+}
 
 ////////// INTERMEDIATE PROBLEMS //////////
 
@@ -129,12 +133,21 @@ let passingScore = 7;
 
 */
 
-//CODE HERE
+let changeMyMind = true
+
+if (changeMyMind) {
+  changeMyMind = false
+} else {
+  changeMyMind = true
+}
 
 ////////// PROBLEM 10 //////////
-// Using the "not" operator (!), change the current value of changeMyMind to true (it should currently be set to false due to the if-else statement in Problem 9). After you change the value of changeMyMind, console.log it's new value (it should now read true).
+// Using the "not" operator (!), change the current value of changeMyMind to true 
+//(it should currently be set to false due to the if-else statement in Problem 9). 
+//After you change the value of changeMyMind, console.log its new value (it should now read true).
 
-//CODE HERE
+changeMyMind = !changeMyMind
+console.log(changeMyMind)
 
 ////////// ADVANCED PROBLEMS //////////
 
